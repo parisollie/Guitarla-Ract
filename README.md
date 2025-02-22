@@ -1,8 +1,25 @@
-# React + Vite
+# 06- Guitarla
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A new React project.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a starting point for a React web application.
+
+This application contains the following knowledge:
+
+- Hooks
+
+- UseState,UseEffect
+
+- Statments
+
+- Props
+
+- Local Storage
+  
+-Save and read files in Json and XML format
+
+
+
+<img width="1440" alt="Captura de pantalla 2025-02-22 a la(s) 12 56 23 p m" src="https://github.com/user-attachments/assets/caf9a988-b351-4971-ac0d-2deeb0cb15c1" />
