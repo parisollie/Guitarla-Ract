@@ -1,7 +1,5 @@
-//import { Fragment } from "react"
-//import Guitar from "./Guitar"
-//Vid 77
-import { useMemo } from "react"
+import { useCart } from "../hooks/useCart"
+
 //Vid 78
 //V-55, paso 1.2, creamos nuestro componente Header, le debemos poner export default.
 export default function Heaader({
@@ -10,18 +8,10 @@ export default function Heaader({
    removeFromCart,
    increaseQuantity,
    decreaseQuantity,
-   clearCart }) {
-
-   /*
-     V-75,Paso 1.41,State Derivado, es derivado porque depende de este state (cart.length)
-     V-77,Paso 1.44 UseMemo,renderizarav cuando el carrito cambie y toma 2 cosas.
-   */
-   const isEmpty = useMemo(() => cart.length === 0, [cart])
-
-   /*V-76,paso 1.42,ponemos 0 ,porque sumaremos apartir de ahí
-   toma el acumulado , ose ael total y el segundo es el item , el elemento actual, el 0 es el valor inicial , 
-   es como una iteracion*/
-   const cartTotal = useMemo(() => cart.reduce((total, item) => total + (item.quantity * item.price), 0), [cart])
+   clearCart,
+   //Paso 2.6, agreamos las funciones de nuestro hook personalizado
+   isEmpty,
+   cartTotal }) {
 
    //Paso 1.3, creamos el return del componente Header
    //V-57,paso 1.4, cambiamos a className
